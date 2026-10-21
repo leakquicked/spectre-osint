@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SPECTRE — OSINT Intelligence Platform</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ANIMATED BG -->
+<div class="hero-bg">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80&auto=format" alt="" loading="lazy">
+</div>
+<div class="noise"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+        <polygon points="16,2 30,9.5 30,22.5 16,30 2,22.5 2,9.5" fill="none" stroke="#e63946" stroke-width="1.5"/>
+        <polygon points="16,7 25,12 25,20 16,25 7,20 7,12" fill="none" stroke="#e63946" stroke-width=".7" opacity=".4"/>
+        <circle cx="16" cy="16" r="3" fill="#e63946"/>
+        <line x1="16" y1="10" x2="16" y2="13" stroke="#e63946" stroke-width="1.5"/>
+        <line x1="16" y1="19" x2="16" y2="22" stroke="#e63946" stroke-width="1.5"/>
+        <line x1="10" y1="13" x2="13" y2="14.5" stroke="#e63946" stroke-width="1.5"/>
+        <line x1="19" y1="17.5" x2="22" y2="19" stroke="#e63946" stroke-width="1.5"/>
+        <line x1="10" y1="19" x2="13" y2="17.5" stroke="#e63946" stroke-width="1.5"/>
+        <line x1="19" y1="14.5" x2="22" y2="13" stroke="#e63946" stroke-width="1.5"/>
+      </svg>
+      <span class="logo-text">SPECTRE<span class="logo-dot">.</span></span>
+    </div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-label">Platform</div>
+    <a class="nav-item active" data-module="dashboard" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Dashboard
+    </a>
+    <div class="nav-label">Tools</div>
+    <a class="nav-item" data-module="exif" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      EXIF Analyzer
+    </a>
+    <a class="nav-item" data-module="domain" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      Domain Intel
+    </a>
+    <a class="nav-item" data-module="graph" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+      Link Analysis
+    </a>
+    <div class="nav-label">Workspace</div>
+    <a class="nav-item" data-module="workspace" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      Investigation
+    </a>
+    <a class="nav-item" data-module="reports" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+      Reports
+    </a>
+    <a class="nav-item" data-module="ai" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      AI Analyst
+      <span class="badge">Gemini</span>
+    </a>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="status-bar">
+      <span class="status-dot on"></span>
+      <span class="status-text">All systems nominal</span>
+    </div>
+    <div class="ver">SPECTRE v1.0.0</div>
+  </div>
+</aside>
+
+<div class="main-wrap">
+  <header class="topbar">
+    <button class="mob-btn" id="mobBtn">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="topbar-title" id="modTitle">Dashboard</div>
+    <div class="topbar-right">
+      <div class="clock" id="clock"></div>
+    </div>
+  </header>
+  <main class="content" id="content"></main>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+<div id="gTip"></div>
+<div class="s-overlay" id="sOverlay"></div>
+
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
