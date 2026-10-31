@@ -31,6 +31,16 @@ python -m http.server 8000
 
 Then open http://localhost:8000.
 
+## Security controls
+
+- Content Security Policy restricts browser connections to the documented RDAP, IP and DNS providers.
+- Domain inputs are normalized (including IDNs) and reject URL syntax, credentials, ports and paths.
+- IP lookups accept globally routable IPv4/IPv6 addresses and reject private, loopback, link-local, documentation and other reserved ranges.
+- URL screening accepts only HTTP(S) URLs and rejects embedded credentials; it never visits the target.
+- Local case storage validates its data shape and applies entry and field-size limits.
+- Text hashing and file hashing/metadata inspection have size limits to reduce accidental browser memory exhaustion.
+- Automated validation tests run with Node.js on pushes and pull requests.
+
 ## Privacy model
 
 - No account, analytics, telemetry or backend.
