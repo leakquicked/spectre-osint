@@ -1,3 +1,5 @@
+![Deploy SPECTRE to GitHub Pages](https://github.com/leakquicked/spectre-osint/actions/workflows/pages.yml/badge.svg)
+
 # SPECTRE — Intelligence Workbench
 
 A privacy-first, browser-native cyber intelligence toolkit for learning, public-data research and defensive analysis.
