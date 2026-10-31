@@ -43,4 +43,5 @@ test('browser security policy limits outbound connections to documented provider
   assert.match(html, /https:\/\/ipwho\.is/);
   assert.match(html, /https:\/\/cloudflare-dns\.com/);
   assert.match(html, /strict-origin-when-cross-origin/);
+  assert.match(html, /data-del=\"\'+esc\\(x\\.id\\)\'+\"/);
 });
